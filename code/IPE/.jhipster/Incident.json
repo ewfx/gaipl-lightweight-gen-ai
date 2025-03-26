@@ -1,0 +1,40 @@
+{
+  "annotations": {
+    "changelogDate": "20250323145121"
+  },
+  "fields": [
+    {
+      "fieldName": "incidentnum",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shortDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "descrption",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "priority",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "openedAt",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "resolvedAt",
+      "fieldType": "Instant"
+    }
+  ],
+  "name": "Incident",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

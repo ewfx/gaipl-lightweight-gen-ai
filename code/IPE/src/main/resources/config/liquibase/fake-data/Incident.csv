@@ -1,0 +1,11 @@
+id;incidentnum;short_description;descrption;status;priority;opened_at;resolved_at
+1;INC001;ElasticSearch Down;Cluster down due to memory;Critical;High;2025-03-23T12:31:16;2025-03-23T14:00:00
+2;INC002;Query Timeout;ElasticSearch queries timing out;High;High;2025-03-23T08:02:30;2025-03-23T09:05:00
+3;INC003;Node Failure;ElasticSearch node failure;Medium;Medium;2025-03-22T16:00:11;2025-03-22T16:45:00
+4;INC004;Slow Response;ElasticSearch slow queries;High;High;2025-03-22T14:52:35;2025-03-23T00:15:22
+5;INC005;Index Corrupt;ElasticSearch index corruption;Critical;High;2025-03-22T19:53:09;2025-03-22T21:01:30
+6;INC006;Data Issue;Inconsistent data in ElasticSearch;High;High;2025-03-23T00:53:20;2025-03-22T16:35:51
+7;INC007;Health Warning;ElasticSearch cluster health warning;Medium;Medium;2025-03-22T17:12:26;2025-03-22T18:37:58
+8;INC008;Replication Lag;ElasticSearch node replication lag;Medium;Low;2025-03-23T09:33:29;2025-03-23T05:41:12
+9;INC009;Indexing Error;ElasticSearch indexing failure;Critical;High;2025-03-23T08:07:42;2025-03-22T21:15:20
+10;INC010;Out of Memory;ElasticSearch out of memory;Critical;High;2025-03-22T23:07:35;2025-03-22T18:38:20

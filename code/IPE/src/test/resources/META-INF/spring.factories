@@ -1,0 +1,4 @@
+org.springframework.test.context.ContextCustomizerFactory = \
+    com.hackathon.ipe.config.\
+    SqlTestContainersSpringContextCustomizerFactory,com.hackathon.ipe.config.\
+    TestContainersSpringContextCustomizerFactory
