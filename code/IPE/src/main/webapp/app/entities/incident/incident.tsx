@@ -36,7 +36,7 @@ export const Incident = () => {
         // Wait for the widget to initialize
         setTimeout(() => {
           window.mountChainlitWidget?.({
-            chainlitServer: 'http://localhost:8000',
+            chainlitServer: 'http://74.224.97.244:8000',
             defaultOpen: false,
             theme: 'light',
             chatProfile: { name: 'Incident Assistant' },
@@ -230,7 +230,7 @@ export const Incident = () => {
     // 1. Inject Chainlit Copilot script
     if (!document.getElementById(scriptId)) {
       const script = document.createElement('script');
-      script.src = 'http://localhost:8000/copilot/index.js'; // ✅ this is the CORRECT file for widget
+      script.src = 'http://74.224.97.244:8000/copilot/index.js'; // ✅ this is the CORRECT file for widget
       script.async = true;
       script.id = scriptId;
       document.body.appendChild(script);
@@ -239,7 +239,7 @@ export const Incident = () => {
     // 2. Optionally mount widget manually if you want to open/override behavior
     setTimeout(() => {
       window.mountChainlitWidget?.({
-        chainlitServer: 'http://localhost:8000',
+        chainlitServer: 'http://74.224.97.244:8000',
         defaultOpen: false,
         theme: 'light',
         chatProfile: {
@@ -283,7 +283,7 @@ export const Incident = () => {
               &laquo;
             </Button>
 
-            <iframe src="http://localhost:8000" title="Chainlit Assistant" style={{ width: '100%', height: '100%', border: 'none' }} />
+            <iframe src="http://74.224.97.244:9000" title="Chainlit Assistant" style={{ width: '100%', height: '100%', border: 'none' }} />
           </Col>
         )}
 
