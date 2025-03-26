@@ -29,8 +29,8 @@ if not openai_api_key:
 print("OPENAI_API_KEY loaded successfully.")
 
 # MCP Server Path
-MCP_SERVER_PATH = os.path.abspath("./elasticsearch-mcp-server/main.py")
-SNOW_SERVER_PATH = os.path.abspath("./servicenow-mcp/main.py")
+MCP_SERVER_PATH = os.path.abspath("./elastic_mcp/main.py")
+SNOW_SERVER_PATH = os.path.abspath("./servicenow-mcp.py")
 print(f"MCP server path: {MCP_SERVER_PATH}")
 
 # ---------------------- Tools ----------------------
