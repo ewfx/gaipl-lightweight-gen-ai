@@ -125,6 +125,7 @@ builder.add_edge("final", END)
 graph = builder.compile()
 
 # ---------------------- Chainlit Session ----------------------
+chat_history = {}
 
 @cl.on_chat_start
 async def on_chat_start():
@@ -142,32 +143,47 @@ async def on_chat_start():
 
 @cl.on_message
 async def on_message(msg: cl.Message):
-    config = {"configurable": {"thread_id": cl.context.session.id}}
+    session_id = cl.context.session.id
+    config = {"configurable": {"thread_id": session_id}}
     cb = cl.LangchainCallbackHandler()
+
+    # Initialize session history if not present
+    if session_id not in chat_history:
+        chat_history[session_id] = []
+
+    # Add new user message to session history
+    chat_history[session_id].append(HumanMessage(content=msg.content))
+
     final_answer = cl.Message(content="")
     full_response = ""
     streamed = False
 
     try:
         async for step, _ in graph.astream(
-            {"messages": [HumanMessage(content=msg.content)]},
+            {"messages": chat_history[session_id]},
             stream_mode="messages",
             config=RunnableConfig(callbacks=[cb], **config),
         ):
             if hasattr(step, "type") and step.type == "tool":
-                print("Skipping raw tool message during stream.")
                 continue
-
             if step and getattr(step, "content", "").strip():
                 streamed = True
                 full_response += step.content
                 await final_answer.stream_token(step.content)
+
+        # Append AI response to session memory
+        chat_history[session_id].append(AIMessage(content=full_response.strip()))
 
     except Exception as e:
         final_answer.content = f"Error: {e}"
         await final_answer.send()
     else:
         if not streamed:
-            # If nothing was streamed, send fallback
             final_answer.content = full_response.strip()
             await final_answer.send()
+            
+@cl.on_chat_end
+def on_chat_end():
+    session_id = cl.context.session.id
+    if session_id in chat_history:
+        del chat_history[session_id]
