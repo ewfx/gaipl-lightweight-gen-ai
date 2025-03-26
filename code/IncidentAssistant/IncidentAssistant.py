@@ -136,8 +136,6 @@ async def on_chat_start():
     if incidents:
         print(f"Received incidents from frontend: {len(incidents)}")
         incident_list = "\n".join([f"Incident #{i+1}: {inc['incidentnum']} — {inc['shortDescription']}" for i, inc in enumerate(incidents)])
-        session_id = cl.context.session.id
-        chat_history[session_id].append(HumanMessage(incident_list))
         await cl.Message(content=f"Here are all the incidents currently visible on screen:\n\n{incident_list}").send()
 
     else:
