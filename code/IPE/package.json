@@ -63,7 +63,6 @@
     "webapp:dev": "npm run webpack-dev-server -- --config webpack/webpack.dev.js --env stats=minimal",
     "webapp:dev-verbose": "npm run webpack-dev-server -- --config webpack/webpack.dev.js --progress=profile --env stats=normal",
     "webapp:prod": "npm run clean-www && npm run webapp:build:prod --",
-    "webapp:test": "npm run test --",
     "webpack-dev-server": "webpack serve"
   },
   "config": {

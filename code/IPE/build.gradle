@@ -77,17 +77,6 @@ springBoot {
 }
 
 
-check.dependsOn integrationTest
-task testReport(type: TestReport) {
-    destinationDirectory = file("$buildDir/reports/tests")
-    testResults.from(test)
-}
-
-task integrationTestReport(type: TestReport) {
-    destinationDirectory = file("$buildDir/reports/tests")
-    testResults.from(integrationTest)
-}
-
 gitProperties {
     failOnNoGitDirectory = false
     keys = ["git.branch", "git.commit.id.abbrev", "git.commit.id.describe"]
