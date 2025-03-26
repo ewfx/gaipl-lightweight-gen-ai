@@ -76,19 +76,6 @@ springBoot {
     mainClass = "com.hackathon.ipe.IpeApp"
 }
 
-test {
-    useJUnitPlatform()
-    exclude "**/*IT*", "**/*IntTest*"
-    testLogging {
-        events 'FAILED', 'SKIPPED'
-    }
-    jvmArgs += '-Djava.security.egd=file:/dev/./urandom -Xmx512m'
-    // uncomment if the tests reports are not generated
-    // see https://github.com/jhipster/generator-jhipster/pull/2771 and https://github.com/jhipster/generator-jhipster/pull/4484
-    // ignoreFailures true
-    reports.html.required = false
-    testLogging.exceptionFormat "full"
-}
 
 check.dependsOn integrationTest
 task testReport(type: TestReport) {
