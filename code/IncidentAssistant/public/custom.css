@@ -1,0 +1,14 @@
+/* Target maximized Chainlit widget and shrink its width */
+.cl-chat-widget--expanded {
+    max-width: 60% !important; /* adjust as needed */
+    right: 20px !important;    /* give some padding from right */
+    bottom: 20px !important;   /* optional spacing */
+    border-radius: 12px !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Prevent overflow outside viewport */
+  body {
+    overflow-x: hidden;
+  }
+  

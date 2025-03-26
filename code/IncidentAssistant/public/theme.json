@@ -1,0 +1,28 @@
+{
+    "custom_fonts": [],
+    "variables": {
+      "light": {
+        "--background": "0 0% 100%",
+        "--foreground": "0 0% 5%",
+        "--card": "0 0% 100%",
+        "--popover": "0 0% 100%",
+        "--sidebar-background": "0 0% 100%",
+        "--sidebar-foreground": "0 0% 10%",
+        "--sidebar-border": "0 0% 80%",
+        "--muted": "0 0% 90%",
+        "--muted-foreground": "0 0% 30%"
+      },
+      "dark": {
+        "--background": "0 0% 0%",
+        "--foreground": "0 0% 100%",
+        "--card": "0 0% 10%",
+        "--popover": "0 0% 10%",
+        "--sidebar-background": "0 0% 5%",
+        "--sidebar-foreground": "0 0% 100%",
+        "--sidebar-border": "0 0% 40%",
+        "--muted": "0 0% 30%",
+        "--muted-foreground": "0 0% 70%"
+      }
+    }
+  }
+  
