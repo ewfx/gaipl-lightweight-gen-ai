@@ -28,7 +28,7 @@ export const Incident = () => {
     if (!document.getElementById(scriptId)) {
       const script = document.createElement('script');
       script.id = scriptId;
-      script.src = 'http://localhost:8000/copilot/index.js';
+      script.src = 'http://74.224.97.244:8000/copilot/index.js';
       script.async = true;
       script.onload = () => {
         console.warn('✅ Chainlit Copilot script loaded');
