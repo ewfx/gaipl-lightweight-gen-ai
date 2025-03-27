@@ -14,7 +14,10 @@
 ---
 
 ## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+An Integrated Portal Environement featuring Personal Assistant, Inciden Copilot Integrated with Elastic MCP for Health Monitoring and SNOW for CHG Management 
+
+Hosted on Azure - Please user/user as credentials. 
+http://74.224.97.244:8080/incident
 
 ## 🎥 Demo
 🔗 [Live Demo](#) (if applicable)  
