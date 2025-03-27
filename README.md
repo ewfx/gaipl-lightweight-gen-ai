@@ -19,6 +19,19 @@ An Integrated Portal Environement featuring Personal Assistant, Incident Copilot
 Hosted on Azure - Please user/user as credentials. 
 http://74.224.97.244:8080/incident
 
+if you want to cretae indices in elastic dev cloud  and incidents in SNOW dev instances to test, you can us these 
+ELASTIC_HOST=https://f666d8b8c1cc4e9eae30a09b56bb6de8.us-central1.gcp.cloud.es.io:443
+ELASTIC_USERNAME=elastic
+ELASTIC_PASSWORD=LzPvYaDQ0lA0eOT91uKMu7hV
+# ServiceNow MCP Server Environment Variables
+
+# ServiceNow Instance URL
+SERVICENOW_INSTANCE_URL=https://dev310213.service-now.com/
+
+# Authentication - Basic Auth
+SERVICENOW_USERNAME=admin
+SERVICENOW_PASSWORD=A*a6-4xzNOfR
+
 ## 🎥 Demo
 🔗 [Live Demo](#) (if applicable)  
 📹 [Video Demo](#) (if applicable)  
