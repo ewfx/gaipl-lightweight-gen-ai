@@ -14,7 +14,7 @@
 ---
 
 ## 🎯 Introduction
-An Integrated Portal Environement featuring Personal Assistant, Inciden Copilot Integrated with Elastic MCP for Health Monitoring and SNOW for CHG Management 
+An Integrated Portal Environement featuring Personal Assistant, Incident Copilot Integrated with Elastic MCP for Health Monitoring and SNOW for CHG Management 
 
 Hosted on Azure - Please user/user as credentials. 
 http://74.224.97.244:8080/incident
