@@ -283,7 +283,7 @@ export const Incident = () => {
               &laquo;
             </Button>
 
-            <iframe src="http://74.224.97.244:9000" title="Chainlit Assistant" style={{ width: '100%', height: '100%', border: 'none' }} />
+            <iframe src="http://74.224.97.244:9002" title="Chainlit Assistant" style={{ width: '100%', height: '100%', border: 'none' }} />
           </Col>
         )}
 
